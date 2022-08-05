@@ -1,0 +1,122 @@
+<mat-card class="outline">
+  <p class="h1"> Registration form</p>
+  <br>
+  <form [formGroup]="login">
+  <mat-card class="fir">
+    Name:<br>
+    <mat-form-field class="fn" appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="Eg: Rohit" value="" formControlName="fn">
+      <small *ngIf="fn?.invalid">Fname is required</small>
+    </mat-form-field>
+    <mat-form-field class="ln" appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Eg: Monisha" value="" formControlName="sn">
+      <small *ngIf="sn?.invalid">Sname is required</small>
+    </mat-form-field>
+    <br>
+    <br>
+    Address:<br>
+    <mat-form-field class="add" appearance="outline">
+      <mat-label>Address Lane 1</mat-label>
+      <input matInput placeholder="Address Lane 1" value="" formControlName="add">
+      <small *ngIf="add?.invalid">Address is required</small>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="add" appearance="outline" formControlName="addd">
+      <mat-label>Address Lane 2</mat-label>
+      <input matInput placeholder="Address Lane 2" value="">
+      <small *ngIf="addd?.invalid">Address2 is required</small>
+    </mat-form-field>
+    <mat-form-field class="c" appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="City" value="City" formControlName="city">
+      <small *ngIf="city?.invalid">City is required</small>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>State</mat-label>
+      <mat-select formControlName="state">
+        <small *ngIf="state?.invalid">State is required</small>
+        <mat-option value="one">Tamil Nadu</mat-option>
+        <mat-option value="two">Karnataka</mat-option>
+        <mat-option value="two">Maharastra</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="c" appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="ZipCode" value="Zipcode" formControlName="zip">
+      <small *ngIf="zip?.invalid">ZipCode is required</small>
+    </mat-form-field>
+    <br>
+    Phone<br>
+    <mat-form-field class="ph" appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="phone" value="Phone" formControlName="phone">
+      <small *ngIf="phone?.invalid">Phone is required</small>
+    </mat-form-field>
+    <br>
+    Email:<br>
+    <mat-form-field class="em" appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="Email" value="Email" formControlName="em">
+      <small *ngIf="em?.invalid">Sname is required</small>
+    </mat-form-field>
+    <br>
+    Order-Type:<br>
+    <mat-radio-button value="always">Delivery</mat-radio-button>
+    <mat-radio-button value="always">Pick-Up</mat-radio-button>
+
+    <br>
+    <br>
+
+    <mat-card class="se">
+
+    Order:<br>
+    <mat-form-field appearance="fill">
+      <mat-label>Apitizer</mat-label>
+      <mat-select>
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Salad/soup</mat-label>
+      <mat-select>
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Enterries</mat-label>
+      <mat-select>
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Bevarages</mat-label>
+      <mat-select>
+        <mat-option value="one">First option</mat-option>
+        <mat-option value="two">Second option</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    Special Instructions<br>
+    <mat-form-field class="sp" appearance="outline">
+      <mat-label></mat-label>
+      <input matInput placeholder="Special Instructions" value="">
+    </mat-form-field>
+  </mat-card>
+  <br>
+  <br>
+  <button mat-stroked-button color="Warn"  class="btn-btn" >+Add Meal</button><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <button mat-raised-button color="warn">Submit</button>
+
+
+  </mat-card>
+</form>
+</mat-card>
+<router-outlet></router-outlet>

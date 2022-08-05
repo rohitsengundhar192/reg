@@ -1,0 +1,37 @@
+.outline{
+  background-color: greenyellow;
+  height:190%;
+  width: 50%;
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 22%;
+  padding: 5%;
+}
+.add{
+  width: 100%;
+}
+.c{
+  width: 30%;
+  padding: 1%;
+}
+.se{
+  background-color: darkgray;
+}
+.em{
+  width: 40%;
+}
+.ph{
+  width: 40%;
+}
+.fn{
+  padding: 3%;
+}
+.sp{
+  width: 100%;
+}
+.h1{
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 300%;
+}
